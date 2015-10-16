@@ -18,14 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXB-OA-W0e">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                             </scrollView>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="A8s-Hi-bpn">
+                                <rect key="frame" x="-5" y="0.0" width="605" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="605" id="dH2-Pw-mjV"/>
+                                    <constraint firstAttribute="height" constant="44" id="of7-Al-uZr"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="674-oB-xFl"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wXB-OA-W0e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="DeT-UN-4AX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wXB-OA-W0e" secondAttribute="trailing" constant="-20" id="JLo-z1-emR"/>
-                            <constraint firstItem="wXB-OA-W0e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="k2t-uv-47R"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="k2t-uv-47R"/>
+                            <constraint firstItem="A8s-Hi-bpn" firstAttribute="trailing" secondItem="wXB-OA-W0e" secondAttribute="trailing" id="kRg-ZW-jD2"/>
+                            <constraint firstItem="A8s-Hi-bpn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mhP-Es-raR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wXB-OA-W0e" secondAttribute="bottom" id="zTJ-uU-FfZ"/>
                         </constraints>
                     </view>
@@ -35,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="315"/>
+            <point key="canvasLocation" x="302" y="315"/>
         </scene>
     </scenes>
 </document>

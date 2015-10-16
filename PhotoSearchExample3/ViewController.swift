@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
     
 
   
@@ -46,9 +46,13 @@ class ViewController: UIViewController {
                     for var i = 0; i < urlArray.count; i++ {
                         let imageView = UIImageView(frame: CGRectMake(0, 320*CGFloat(i), 320, 320))     //1
                         if let url = NSURL(string: urlArray[i]) {
+                            print ("loading URL")
                             imageView.setImageWithURL( url)                          //2
                             self.scrollView.addSubview(imageView)
-                        }                    }
+                            print ("added to subview")
+                        }
+                    }
+                
                 }
             },
             
@@ -57,6 +61,14 @@ class ViewController: UIViewController {
         })
 
     }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        for subview in self.scrollView.subviews {
+            subview.removeFromSuperview()
+            searchBar.resignFirstResponder()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

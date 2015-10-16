@@ -6,9 +6,10 @@
 //  Copyright © 2015 Vince Day. All rights reserved.
 //
 
+#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking/UIKit+AFNetworking.h"
 #ifndef bridge_h
 #define bridge_h
-#import "AFNetworking/AFNetworking.h"
-#import "UIKit+AFNetworking/UIKit+AFNetworking.h"
+
 
 #endif /* bridge_h */
