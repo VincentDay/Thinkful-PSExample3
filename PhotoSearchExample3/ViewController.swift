@@ -57,10 +57,14 @@ class ViewController: UIViewController, UISearchBarDelegate {
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         for subview in self.scrollView.subviews {
             subview.removeFromSuperview()
-            searchBar.resignFirstResponder()
+            
+        }
+        searchBar.resignFirstResponder()
+        if let searchText = searchBar.text {
+            searchInstagramByHashtag(searchText)
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

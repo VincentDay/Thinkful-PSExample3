@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,14 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXB-OA-W0e">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </scrollView>
                             <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="A8s-Hi-bpn">
-                                <rect key="frame" x="-5" y="0.0" width="605" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="605" id="dH2-Pw-mjV"/>
-                                    <constraint firstAttribute="height" constant="44" id="of7-Al-uZr"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="674-oB-xFl"/>
@@ -34,12 +29,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wXB-OA-W0e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="DeT-UN-4AX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wXB-OA-W0e" secondAttribute="trailing" constant="-20" id="JLo-z1-emR"/>
-                            <constraint firstItem="wXB-OA-W0e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="k2t-uv-47R"/>
-                            <constraint firstItem="A8s-Hi-bpn" firstAttribute="trailing" secondItem="wXB-OA-W0e" secondAttribute="trailing" id="kRg-ZW-jD2"/>
-                            <constraint firstItem="A8s-Hi-bpn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mhP-Es-raR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wXB-OA-W0e" secondAttribute="bottom" id="zTJ-uU-FfZ"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U9L-KS-pGB"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="top" secondItem="A8s-Hi-bpn" secondAttribute="bottom" id="UJJ-LM-ASK"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="aMv-Wi-32N"/>
+                            <constraint firstAttribute="trailing" secondItem="wXB-OA-W0e" secondAttribute="trailing" id="fj9-FC-sJZ"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="leading" secondItem="A8s-Hi-bpn" secondAttribute="leading" id="hGR-Lq-sM7"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="trailing" secondItem="A8s-Hi-bpn" secondAttribute="trailing" id="jbZ-J1-sAE"/>
+                            <constraint firstItem="wXB-OA-W0e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="jsb-I6-PP8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -48,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="315"/>
+            <point key="canvasLocation" x="277" y="286"/>
         </scene>
     </scenes>
 </document>
